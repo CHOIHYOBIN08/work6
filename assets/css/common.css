@@ -1,0 +1,40 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+
+html.hidden,
+html.hidden body{
+    overflow: hidden;
+    height: 100%;
+}
+
+@keyframes barCloseSecond{
+    0% {
+        top: 50%;
+        transform: rotate(0deg);
+    
+    }
+    100% {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+}
+@keyframes barCloseFirst{
+    0% {
+        top: 50%;
+        transform: rotate(0deg);
+    
+    }
+
+100% {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+}

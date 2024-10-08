@@ -1,0 +1,495 @@
+
+
+
+
+#container{
+    position: relative;
+    background-size: contain;
+}
+.fixed{
+    overflow: hidden;
+    position: relative;
+}
+.fixed .symbol{
+    position: fixed;
+    bottom: 83.949px;
+    max-width: 94.74px;
+    right: 2.5%;
+    z-index: 5;
+    width: 100%;
+
+}
+.fixed .signature{
+    position: fixed;
+    bottom: 38.375px;
+    max-width: 94.74px;
+    mix-blend-mode: difference;
+    white-space: nowrap;
+    right: 2.5%;
+    z-index: 5;
+    font-family: 'gentle';
+    color: #fff;
+    font-size: 13px;
+}
+.fixed .signature p,
+.fixed .signature span{
+}
+.sc-main{
+    position: relative;
+}
+.sc-main .title{
+    position: absolute;
+    width: 100%;
+    max-width: 95%;
+    padding: 40px 0 0 40px;
+}
+.sc-main h2{
+    font-size: 25px;
+    font-family: 'gm';
+}
+.sc-main img{
+    display: block;
+    width: 100%;
+}
+.sc-main .desc{
+    font-size: 15px;
+    font-family: 'unica';
+}
+.sc-intro{
+    overflow: hidden;
+    padding: 10vw 0 10vw 0;
+    background-color: #000;
+    font-size: 15px;
+    color: #fff;
+}
+.sc-intro .video-group{
+    margin-top: 0;
+    max-width: 409.338px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sc-intro .video-group video{
+    width: 100%;
+    
+}
+.sc-intro .text-group{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'unica';
+    color: rgb(153, 153, 153);
+    
+}
+.sc-intro .txt{
+    position: relative;
+    line-height: 1.4;
+    max-width: 690.75px;
+    margin-top: 39.971px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size 0.3s ease;
+}
+.sc-product{
+    position: relative;
+}
+.sc-product .pro-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    padding: 20px 0 80px;
+}
+.sc-product .pro-group .pro-item{
+    width: 24%;
+    height: 550px;
+    transform-origin: 50% 0;
+    perspective: 2500px;
+}
+.sc-product .pro-group .pro-item .card{
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 0;
+    position: relative;
+    perspective: 1000px;
+}
+.sc-product .pro-group .pro-item .card:hover .front{
+    transform: rotateY(-180deg);
+}
+.sc-product .pro-group .pro-item .card:hover .back{
+    transform: rotateY(0);
+}
+.sc-product .pro-group .front{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.8s;
+    border-radius: 7px;
+}
+.sc-product .pro-group .title-area{
+    width: 100%;
+    font-size: 14px;
+    background: #fff;
+}
+.sc-product .pro-group .title-area span{
+    padding-top: 10px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sc-product .pro-group .img-area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.sc-product .pro-group .img-area video,
+.sc-product .pro-group .img-area img{
+    height: 100%;
+    object-fit: cover;
+}
+.sc-product .pro-group .back{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.8s;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+
+.sc-visual{
+    margin-top: clamp(90px,9.375vw,9.375vw);
+}
+.sc-visual .visual-group{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+
+}
+.sc-visual .product-list{
+    position: relative;
+    width: calc(75% + 8px);
+}
+.sc-visual .product-list .swiper{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    pointer-events: auto;
+}
+.sc-visual .product-list .swiper-wrapper{
+    transition-timing-function: linear;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    box-sizing: content-box;
+}
+.sc-visual .product-list .swiper-wrapper .swiper-slide{
+    width: auto;
+    height: 46.875vw;
+    margin-right: 8px;
+    cursor: pointer;
+    position: relative;
+}
+.sc-visual .swiper-slide .thumb{
+    width: auto;
+    height: 100%;
+    margin: 0;
+}
+.sc-visual .swiper-slide .thumb img{
+    width: 100%;
+    height: inherit;
+}
+.sc-visual .product-info{
+    position: relative;
+    width: calc(25% - 16px);
+    padding-bottom: 5.208vw;
+    font-size: 13px;
+    padding-left: clamp(40px,6.25vw,6.25vw);
+    padding-right: clamp(40px,4.167vw,4.167vw);
+    font-family: 'unica';
+    color: #fff;
+}
+.sc-visual .product-info .title{
+    font-weight: 500;
+    line-height: 2;
+}
+.sc-visual .product-info .text{
+    line-height: 1.5;
+    color: rgb(80, 77, 77);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.sc-visual .product-info a{
+    border-bottom: 1px solid #fff;
+    font-weight: 500;
+    line-height: 2;
+}
+.sc-visual .gallery-style1{
+    display: flex;
+    align-items: flex-end;
+    margin-top: clamp(90px, 9.375vw, 9.375vw);
+}
+.sc-visual .gallery-style1 .thumb{
+    position: relative;
+    width: calc(75% + 8px);
+}
+.sc-visual .gallery-style2{
+    margin-top: clamp(90px, 9.375vw, 9.375vw);
+    display: flex;
+    justify-content: flex-end;
+} 
+.sc-visual .gallery-style2 .thumb{
+    width: 75.3645833333%;
+
+}
+.sc-visual .gallery-style3{
+    margin-top: clamp(90px, 9.375vw, 9.375vw);
+}
+.sc-visual .gallery-style3 .product-info{
+    margin-top: 2.083vw;
+    padding-bottom: 0;
+    padding-left: clamp(40px, 6.25vw, 6.25vw);
+}
+
+.sc-series{
+    position: relative;
+    margin-top: clamp(70px, 9.375vw, 3.375vw);
+    height: auto;
+    min-height: 100vh;
+}
+.sc-series .top{
+    font-size: 15px;
+    line-height: 1.71;
+    font-family: 'unica';
+    color: #fff;
+    padding: 20px clamp(40px,6.25vw,6.25vw) 0;
+}
+.sc-series .text{
+    font-size: 15px;
+    line-height: 1.71;
+    font-family: 'unica';
+    color: #fff;
+
+}
+.sc-series .sticky{
+    position: sticky;
+    margin-top: clamp(36px, 3.125vw, 3.125vw);
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.sc-series .sticky ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition-property: transform;
+    transition: transform 0.3s ease;
+}
+.sc-series .sticky ul li{
+    width: 20%;
+    padding: 0 4.5px;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 100%;
+}
+.sc-series .sticky ul li .thumb{
+    width: 100%;
+    height: auto;
+}
+.sc-series .sticky ul li .product-info{
+    font-size: 15px;
+    padding: 16px 0 0 1.042vw;
+    font-family: 'unica';
+    color: #fff;
+   
+}
+.sc-series .sticky ul li .product-info .title{
+    font-weight: 700;
+    line-height: 2;
+
+}
+.sc-series .sticky ul li .product-info .text{
+    margin-top: 15px;
+    line-height: 1.5;
+    color: #848484;
+}
+.sc-video .video-top{
+    padding: 200px 0 130px;
+    text-align: center;
+}
+.sc-video .video-top p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sc-video .video-area:not(:last-child){
+    margin-bottom: 30px;
+}
+.sc-video video{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .fixed .signature .gentle,
+    .fixed .signature .coordinate{
+        display: none;
+    }
+    .fixed .signature {
+        left: 4%;
+        margin-bottom: 1%;
+        line-height: 1;
+        transition: opacity 0.3s 0.1s ease-out;
+        text-align: left;
+    }
+    .fixed .symbol{
+        right: 4%;
+        width: 17.866666666666667%;
+        bottom: 5vw;
+    
+    }
+    .sc-product .pro-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sc-product .pro-group .pro-item{
+        width: 100%;
+    }
+    .sc-product .pro-group .img-area video,
+    .sc-product .pro-group .img-area img{
+        width: 100%;
+    }
+    .sc-visual .visual-group{
+        display: block;
+    }
+    .sc-visual .product-list{
+        width: 100%;
+        
+    }
+    .sc-visual .product-list .swiper-wrapper .swiper-slide{
+        height: 125.0133333333vw;
+        margin-right: 4px;
+    }
+    .sc-visual .product-info{
+        width: 100%;
+        margin-top: 20px !important;
+        padding-bottom: 0;
+    }
+    .sc-visual .product-info a{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 4.2666666667vw;
+        line-height: 1.5;
+    }
+    .sc-visual .gallery-style1 {
+        display: block;
+    }
+    .sc-visual .gallery-style1 .thumb {
+        width: 100%;
+    }
+    .sc-visual .gallery-style2 .thumb{
+        width: 100%;
+    }
+    .sc-visual .product-list .swiper-wrapper .swiper-slide{
+        height: 70vw;
+    }
+    .sc-series .sticky ul li .product-info {
+        font-size: 13px;
+        text-align: center;
+    }
+    .sc-series .sticky ul li{
+        width: 40%;
+    }
+    .sc-series .sticky ul li .product-info .text{
+        display: none;
+    }
+    .sc-series .sticky {
+        margin-top: 24px; 
+        min-height: 90vh; 
+    }
+    .sc-video .video-top{
+        padding: 100px 0 130px;
+    }
+}
+
+
+
+
+@media (max-width: 767px){
+    .sc-main h2{
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    .sc-main .title {
+        padding: 20px 0 0 20px;
+    }
+    .sc-intro .txt {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 766px){
+    .sc-product {
+        margin-top: 100px;
+    }
+    .sc-product .pro-group{
+        display: block;
+
+    }
+    .sc-product .pro-group .pro-item {
+       margin-bottom: 50px;
+    }
+    .sc-product .pro-group .back{
+        display: none;
+    }
+    .sc-product .pro-group .pro-item .card:hover .front{
+        transform: none;
+    }
+    .sc-series .sticky ul li{
+        width: 50%;
+    }
+    .sc-visual .product-list .swiper-wrapper .swiper-slide{
+        height: 100vw;
+    }
+    .sc-video .video-top{
+        padding: 0 20px 100px 20px;
+    }
+
+}
