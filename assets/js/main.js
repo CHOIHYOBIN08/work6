@@ -92,6 +92,19 @@ const scrollTxt = new SplitType('.sc-intro .txt', { types: 'words, chars', });
   });
 
   //시리즈
+  let mm = gsap.matchMedia();
+
+// 800px 이상일 때와 799px 이하일 때 동일한 애니메이션 적용
+mm.add("(min-width: 800px)", () => {
+  applyHorizontalScroll();
+});
+
+mm.add("(max-width: 799px)", () => {
+  applyHorizontalScroll();
+});
+
+// 가로 스크롤 애니메이션을 적용하는 함수
+function applyHorizontalScroll() {
   const horiMotion = gsap.to('.sc-series .series-list', {
     scrollTrigger: {
       trigger: '.sc-series', 
@@ -107,6 +120,7 @@ const scrollTxt = new SplitType('.sc-intro .txt', { types: 'words, chars', });
       return -(document.querySelector('.sc-series .series-list').scrollWidth - window.innerWidth);
     }
   });
+}
 
 
   //푸터
